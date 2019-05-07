@@ -1,6 +1,6 @@
-const packages = require('./packages');
 const npm = require('npm');
 const chalk = require('chalk');
+const packages = require('./package.json').global_packages;
 
 // npm list -g --depth 0
 const installCb = (err, log) => {
